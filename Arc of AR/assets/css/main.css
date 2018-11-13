@@ -1,0 +1,105 @@
+/* Universal Reset */
+ *, *:before, *:after {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+
+
+
+body{background-color:#EEE;}
+
+
+/*Logo, Menu, and Donation*/
+#EverythingUpTop{background:white;height:98px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}/*Opaque shape behind fixed element that body content passes under*/
+#ArcArkLogo{margin-right:20px;width:120px;height:68px;}
+
+#MakeDonation{width:190px; height:30px; margin-bottom:5px;
+text-align:center; padding-top:3.5px; color:#FFFFFF;
+background: #44697D;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;}
+#MakeDonation:hover{background:#C6DEEA;transition-duration:0.25s;}
+
+/*Menu Dropdown*/
+#dropdownMenu{width:190px; height:30px;
+text-align:center; padding-top:3.5px; color:#FFFFFF;
+background: #EA7125;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;border-style:none;}
+#dropdownMenu:click{background:#FAB80D;}
+#dropdownMenu:hover{background:#FAB80D;transition-duration:0.25s}
+.dropdown-menu{background-color:#44697D;width:180px;margin-left:5px;
+    border-bottom-left-radius:10px;border-bottom-right-radius:10px;box-shadow:0px 4px 4px rgba(0,0,0,0.25);
+    padding-bottom:10px;padding-top:10px;}
+.dropdown-item{background:#EA7125;color:#FFFFFF;text-align:center;}
+.dropdown-item:hover{background:#FBB081;color:#FFFFFF;}
+
+/* add hover behaviour */
+.mainmenu a:hover {background-color: #C5C5C5;}
+.dropdown-item:click{overflow:hidden;max-height: 0;-webkit-transition: all 0.5s ease-out;}
+#SubItem{text-decoration:none;text-align:center;color:#FFFFFF;}
+#SubItem a{color:#FFFFFF;text-decoration:none;}
+#SubItem li{padding-top:2.5px;padding-bottom:2.5px;}
+#SubItem li:hover{background:#C6DEEA;}
+
+
+.dropdown-item a:click #SubItem {
+  display: block;
+  max-height: 200px;
+}
+#SubItem {
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.5s ease-out;
+} 
+
+
+
+
+
+#NavMenu:hover{background:#FAB80D;transition-duration:0.25s}
+    .MenuFlex{display:flex;}
+
+    
+
+
+.MenuAndDonation{width:190px;height:68px;align-items:center;}
+.NavAndLogoFlex{padding-top:20px;display:flex;flex-wrap:nowrap;width:330px;margin-right:auto;margin-left:auto;}
+#Line{margin-top:10px;margin-left:auto;margin-right:auto;width: 330px;height: 5px;background: #EA7125;
+    border-radius: 10px;}
+    
+.Fixed{width:100%;position:fixed;}/*Affixes the upper element*/
+
+
+/*Body and content*/
+#ContentBackground{background-color:#FFF;height:100%;width:300px;
+    margin-right:auto;margin-left:auto;padding-top:10px;}
+.heading{font-family: Raleway;font-style: normal;
+    padding-left:20px;font-weight: bold;line-height: normal;
+    color: #44697D;}
+.body{z-index:-1;position:relative;height:100%;top:85px;width:330px;
+    padding-top:20px;margin-left:auto;margin-right:auto;margin-bottom:15px;
+    font-family: Raleway;font-style: normal;line-height:normal;
+    font-size: 11px;color: #1D1D1D;330px;}
+.font{padding-left:30px;padding-right:30px;}
+
+/*art gallery*/
+.card {
+    
+    
+/*Footer*/ 
+.Footer{z-index:-1;background-color:#FFF;width:100%;position:relative;top:65px;}
+#FootLine{position:relative;top:65px;margin-right:auto;margin-left:auto;width:330px;height:5px;background:#EA7125;
+    border-radius: 10px;}
+#FooterAchieve{font-size:12px;font-style:italic;}
+#FooterCopyright{font-size:8px;}
+.AchieveAndCopy{margin-top:5px;margin-left:auto;margin-right:auto;
+    height:30px;width:100px;text-align:center;}
+    
+.FooterFlex{display:flex;width:270px;margin-right:auto;margin-left:auto;padding-bottom:10px;}
+#FacebookAndEmail{margin-top:5px;margin-left:20px;height:30px;width:60px;}
+#FB{height:24px;margin-right:5px;}
+#Email{height:24px;}
