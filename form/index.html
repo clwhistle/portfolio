@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="Jquery,Demonstration, Cycle Plugin" />
+<meta name="description" content="This is a teaching demonstartion" />
+<meta name="author" content="Thomas Wallace" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Jquery Cycle Examples</title>
+<link href="assets/style/screen.css" rel="stylesheet" type="text/css" />
+<!-- include jQuery library via Google CDN -->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.min.js"></script>
+<script type="text/javascript" src="assets/scripts/local-calls.js"></script>
+</head>
+
+<body>
+<div class="container">
+  <form action="" name="registration" class="registration">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" placeholder="John Doe">
+    
+   <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="john@doe.com">
+   
+   <label for="phone">Phone</label>
+   <input type="phone" name="phone" id="phone" placeholder="(555) 123-4567">
+   
+    <label for="character">Character</label>
+    <select name="character">
+      <option value="canon">Canon Character</option>
+      <option value="oc">Original Character (OC)</option>
+      <option value="oc_canon">OC x Canon</option>
+      <option value="canon_canon">Canon x Canon</option>
+    </select>
+
+    <label for="design">Design</label>
+    <select name="design">
+      <option value="chibi">Chibi ($5 per char)</option>
+      <option value="bust">Bust ($5)</option>
+      <option value="torso">Torso ($10)</option>
+      <option value="full_body">Full Body ($15)</option>
+    </select>
+    
+    <label for="color">Color</label>
+    <select name="color">
+      <option value="bw">Black & White</option>
+      <option value="base_color">Base Color</option>
+      <option value="cell_shading">Cell Shading (+$2)</option>
+      <option value="soft_shading">Soft Shading (+$5)</option>
+    </select>
+    
+    <label for="add_info">Additional Character Info</label>
+    <textarea name="message" rows="10" cols="30">
+    Give a description of your character and pose you would like.
+    </textarea>
+
+    <label for="cc_num">Credit Card Number</label>
+    <input type="cc_num" name="cc_num" id="cc_num" placeholder="xxxxxxxxxxxxxxx">
+
+    <button type="submit">Send</button>
+  </form>
+</div>
+</body>
+</html>
